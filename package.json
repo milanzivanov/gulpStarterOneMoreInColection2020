@@ -1,0 +1,19 @@
+{
+  "name": "gulp4-starter-avgust2020",
+  "version": "1.0.0",
+  "description": "gulp 4 starter 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-useref": "^4.0.1"
+  }
+}

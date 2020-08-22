@@ -1,0 +1,10 @@
+//main.scss
+$primary-color: orange;
+$font: sans-serif;
+body{
+  background: $primary-color;
+  font-family: $font;
+  h1{
+    color: yellow;
+  }
+}
