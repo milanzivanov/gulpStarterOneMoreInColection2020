@@ -1,5 +1,46 @@
+/* ----------------- Media queris desktop first
+----------------------------------------------------------------------- */
+/* ----------------- Media queris mobile first
+----------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
+
+.wrapper-inner {
+  max-width: 1170px;
+  margin: 0 auto; }
+
 body {
+  height: 100vh;
   background: orange;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 360px) {
+    body {
+      background-color: greenyellow; } }
+  @media only screen and (min-width: 480px) {
+    body {
+      background-color: pink; } }
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: indianred; } }
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color: navy; } }
+  @media only screen and (min-width: 1366px) {
+    body {
+      background-color: springgreen; } }
   body h1 {
-    color: yellow; }
+    color: blue;
+    text-align: center; }

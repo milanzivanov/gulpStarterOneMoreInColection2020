@@ -1,10 +1,55 @@
-//main.scss
+@import './mixins';
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;   
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+// main.scss
 $primary-color: orange;
 $font: sans-serif;
-body{
+body {
+  height: 100vh;
   background: $primary-color;
   font-family: $font;
-  h1{
-    color: yellow;
+
+  @include flexCHV;
+
+  @include breakpoint(mobile) {
+    background-color: greenyellow;
+  }
+  @include breakpoint(tablet) {
+    background-color: pink;
+  }
+  @include breakpoint(desktop) {
+    background-color: indianred;
+  }
+  @include breakpoint(large-desktop) {
+    background-color: navy;
+  }
+  @include breakpoint(extra-large-desktop) {
+    background-color: springgreen;
+  }
+
+  h1 {
+    color: blue;
+    text-align: center;
   }
 }
